@@ -1,10 +1,6 @@
 .about{
     position: relative;
 
-    &__text{
-        
-    }
-
     &__corner{
         background-color: $lightBlue;
         position: absolute;

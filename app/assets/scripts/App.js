@@ -2,5 +2,6 @@
 import $ from 'jquery';
 import RevealOnScroll from './modules/RevealOnScroll';
 
-new RevealOnScroll ($('.about__text'), '80%');
+new RevealOnScroll ('.about', '80%', 1600);
+new RevealOnScroll ('.portfolio', '80%');
 
