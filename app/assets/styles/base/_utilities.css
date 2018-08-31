@@ -1,0 +1,22 @@
+.wrapper{
+    max-width: 1080px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-wrapper{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.t-margin-large{
+    margin-top: 4rem;
+}
+.t-margin-medium{
+    margin-top: 2rem;
+}
+.t-padding-medium{
+    padding-top: 2rem;
+}
