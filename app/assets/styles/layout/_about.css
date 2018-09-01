@@ -1,5 +1,9 @@
 .about{
-    position: relative;
+
+    &__container{
+        width: 70%;
+        position: relative;
+    }
 
     &__corner{
         background-color: $lightBlue;

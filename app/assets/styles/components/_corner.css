@@ -16,8 +16,8 @@
     }
     &--top2{
         transform: rotate(90deg);
-        transform-origin: 0 0;
-        top: -17px;
+        transform-origin: 2rem 0;
+        top: 2px;
         transition-delay: .4s;
     }
 

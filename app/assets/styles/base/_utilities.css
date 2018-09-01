@@ -1,14 +1,10 @@
 .wrapper{
-    max-width: 1080px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 3rem;
 }
 
 .inner-wrapper{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .t-margin-large{

@@ -9,11 +9,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .heading{
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: $darkBlue;
     text-decoration: underline;
 }
 
 p{
     font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
 }

@@ -364,26 +364,24 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .heading{
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: #001E59;
     text-decoration: underline;
 }
 
 p{
     font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .wrapper{
-    max-width: 1080px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 3rem;
 }
 
 .inner-wrapper{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .t-margin-large{
@@ -406,6 +404,7 @@ p{
     width: 100%;
     height: 80vh;
     background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.82), rgba(149, 210, 254, 0.82)), url("../../assets/images/hero.jpg");
+    background-position: center;
     background-size: cover; 
     position: relative;
 }
@@ -431,9 +430,10 @@ p{
             left: 15rem;
         }
 
-.about{
-    position: relative;
-}
+.about__container{
+        width: 70%;
+        position: relative;
+    }
 
 .about__corner{
         background-color: #95D2FE;
@@ -480,6 +480,37 @@ p{
 
 .portfolio{
     position: relative;
+
+}
+
+.portfolio__heading{
+        color: white;
+        background-color: #001E59;
+        display: inline-block;
+        padding-right: 10vw;
+        padding-bottom: 4rem;
+        padding-left: 4rem;
+        -webkit-transform: translateX(-7rem);
+                transform: translateX(-7rem);
+        text-decoration: none;
+        position: relative;
+        font-size: 4.5rem;
+    }
+
+.portfolio__heading::after {
+	content: "";
+    position:absolute;
+	left: 0;
+	bottom: 4.5rem;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: all ease .4s;
+    
+    }
+
+.portfolio__heading:hover::after {
+	width: 215px;
 }
 
 .reveal-item{
@@ -516,9 +547,9 @@ p{
 .corner--top2{
         -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
-        -webkit-transform-origin: 0 0;
-                transform-origin: 0 0;
-        top: -17px;
+        -webkit-transform-origin: 2rem 0;
+                transform-origin: 2rem 0;
+        top: 2px;
         transition-delay: .4s;
     }
 
