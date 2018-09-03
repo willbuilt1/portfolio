@@ -367,21 +367,24 @@ h1, h2, h3, h4, h5, h6{
     font-size: 4.5rem;
     color: #001E59;
     text-decoration: underline;
+    margin-bottom: 2rem;
 }
 
-p{
+.main-text{
     font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5;
 }
 
 .wrapper{
-    margin-left: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .inner-wrapper{
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-top: 2rem;
 }
 
 .t-margin-large{
@@ -392,8 +395,12 @@ p{
     margin-top: 2rem;
 }
 
-.t-padding-medium{
-    padding-top: 2rem;
+.b-margin-large{
+    margin-bottom: 4rem;
+}
+
+.b-margin-medium{
+    margin-bottom: 2rem;
 }
 
 .b-padding-medium{
@@ -480,16 +487,13 @@ p{
 
 .portfolio{
     position: relative;
-
+    background-color: #001E59;
 }
 
 .portfolio__heading{
         color: white;
-        background-color: #001E59;
         display: inline-block;
-        padding-right: 10vw;
-        padding-bottom: 4rem;
-        padding-left: 4rem;
+        padding-left: 7rem;
         -webkit-transform: translateX(-7rem);
                 transform: translateX(-7rem);
         text-decoration: none;
@@ -498,20 +502,26 @@ p{
     }
 
 .portfolio__heading::after {
-	content: "";
-    position:absolute;
-	left: 0;
-	bottom: 4.5rem;
-	width: 0;
-	height: 2px;
-	background: white;
-	transition: all ease .4s;
-    
-    }
+            content: "";
+            position:absolute;
+            left: 0;
+            bottom: 5px;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: all ease .4s;
+            }
 
 .portfolio__heading:hover::after {
-	width: 215px;
-}
+            width: 100%;
+            }
+
+.portfolio__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        padding-bottom: 7rem;
+    }
 
 .reveal-item{
     opacity: 0;
@@ -568,3 +578,67 @@ p{
                 transform-origin: 100% 0;
         transition-delay: 1.2s;
     }
+
+.item{
+        background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/addstract.png");
+        background-position: center;
+        background-size: cover; 
+        display: flex;
+
+    }
+
+.item__container{
+        background-color: rgba(0,30,89, 0.95);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        margin: 1rem;
+        padding: 2rem 4rem;
+        opacity: 0;
+        transition: all 0.3s ease;
+        }
+
+.item__container:hover{
+            opacity: 1;
+        }
+
+.item__title{
+            font-size: 2rem;
+            text-decoration: underline;
+            padding: 2rem 0;
+            }
+
+.item__description{
+            padding: 2rem 0;
+        }
+
+.item__tech{
+            padding: 2rem 0;
+        }
+
+.item__tech li{
+                list-style: none;
+                display: inline-block;
+                font-size: 1.5rem;
+                background-color: white;
+                color:#001E59;
+                border: solid 2px #001E59;
+                padding: 5px;
+                border-radius: 5px;
+                transition: all .2s ease;
+            }
+
+.item__tech li:not(:last-child){
+                    margin-right: 1rem;
+                }
+
+.item__icons{
+            display: flex;
+            font-size: 3rem;
+        }
+
+.item__icons-icon:first-child{
+                margin-right: 2rem;
+            }

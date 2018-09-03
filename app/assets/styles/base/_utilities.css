@@ -1,10 +1,12 @@
 .wrapper{
-    margin-left: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .inner-wrapper{
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-top: 2rem;
 }
 
 .t-margin-large{
@@ -13,8 +15,11 @@
 .t-margin-medium{
     margin-top: 2rem;
 }
-.t-padding-medium{
-    padding-top: 2rem;
+.b-margin-large{
+    margin-bottom: 4rem;
+}
+.b-margin-medium{
+    margin-bottom: 2rem;
 }
 .b-padding-medium{
     padding-bottom: 2rem;
