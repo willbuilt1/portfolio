@@ -1,0 +1,72 @@
+.spotlight{
+        width: 100%;
+        min-height: 80vh;
+        background-image: linear-gradient( to right, rgba(#fff, 0.5), rgba($darkBlue, 1.0) 30%), url("../../assets/images/portfolio.png");
+        background-position: center;
+        background-size: cover; 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 3rem 7rem 3rem 0;
+
+            &__container{
+            width: 70%;
+            position: relative;
+            }
+
+            &__corner{
+                background-color: white;
+            }
+
+            & .heading{
+                color: white;
+            }
+            & .main-text{
+                color: white;
+
+                & h4{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.6rem;
+                    text-decoration: underline;
+                }
+                & li{
+                    display: inline-block;
+                    list-style: square;
+
+                    &:not(:last-child){
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            &__view-code {
+                    text-align: center;
+                    font-size: 2rem;
+
+                    & a{
+                        position: relative;
+                        &::after {
+                        content: "";
+                        position:absolute;
+                        left: 0;
+                        bottom: 0px;
+                        width: 0;
+                        height: 2px;
+                        background: white;
+                        -webkit-transition: all ease .4s;
+                        -o-transition: all ease .4s;
+                        transition: all ease .4s;
+                        }
+
+                        &:visited{
+                            color: white;
+                        }
+                        &:link{
+                            text-decoration: none;
+                        }
+                        &:hover::after {
+                        width: 100%;
+                        }
+
+                    }
+                }
+    }

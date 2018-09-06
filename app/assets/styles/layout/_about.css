@@ -7,39 +7,5 @@
 
     &__corner{
         background-color: $lightBlue;
-        position: absolute;
-        width:0;
-        height: 3px;
-        max-width: 20rem;
-        transition: width .4s ease-in;
-
-        &.showCorner{
-                width:15vw;
-            }
-        
-        &--top1{
-            left: 0;
-
-        }
-        &--top2{
-            transform: rotate(90deg);
-            transform-origin: 0 0;
-            top: -17px;
-            transition-delay: .4s;
-        }
-
-        &--bottom1{
-            bottom: 0;
-            right: 0;
-            transition-delay: .8s;
-        }
-
-        &--bottom2{
-            bottom: -20px;
-            right: 17px;
-            transform: rotate(90deg);
-            transform-origin: 100% 0;
-            transition-delay: 1.2s;
-        }
     }
 }

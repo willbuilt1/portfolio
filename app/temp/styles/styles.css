@@ -444,46 +444,7 @@ h1, h2, h3, h4, h5, h6{
 
 .about__corner{
         background-color: #95D2FE;
-        position: absolute;
-        width:0;
-        height: 3px;
-        max-width: 20rem;
-        transition: width .4s ease-in;
     }
-
-.about__corner.showCorner{
-                width:15vw;
-            }
-
-.about__corner--top1{
-            left: 0;
-
-        }
-
-.about__corner--top2{
-            -webkit-transform: rotate(90deg);
-                    transform: rotate(90deg);
-            -webkit-transform-origin: 0 0;
-                    transform-origin: 0 0;
-            top: -17px;
-            transition-delay: .4s;
-        }
-
-.about__corner--bottom1{
-            bottom: 0;
-            right: 0;
-            transition-delay: .8s;
-        }
-
-.about__corner--bottom2{
-            bottom: -20px;
-            right: 17px;
-            -webkit-transform: rotate(90deg);
-                    transform: rotate(90deg);
-            -webkit-transform-origin: 100% 0;
-                    transform-origin: 100% 0;
-            transition-delay: 1.2s;
-        }
 
 .portfolio{
     position: relative;
@@ -523,6 +484,83 @@ h1, h2, h3, h4, h5, h6{
         padding-bottom: 7rem;
     }
 
+.spotlight{
+        width: 100%;
+        min-height: 80vh;
+        background-image: linear-gradient( to right, rgba(255,255,255, 0.5), rgba(0,30,89, 1.0) 30%), url("../../assets/images/portfolio.png");
+        background-position: center;
+        background-size: cover; 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 3rem 7rem 3rem 0;
+    }
+
+.spotlight__container{
+            width: 70%;
+            position: relative;
+            }
+
+.spotlight__corner{
+                background-color: white;
+            }
+
+.spotlight .heading{
+                color: white;
+            }
+
+.spotlight .main-text{
+                color: white;
+            }
+
+.spotlight .main-text h4{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.6rem;
+                    text-decoration: underline;
+                }
+
+.spotlight .main-text li{
+                    display: inline-block;
+                    list-style: square;
+                }
+
+.spotlight .main-text li:not(:last-child){
+                        margin-right: 1rem;
+                    }
+
+.spotlight__view-code {
+                    text-align: center;
+                    font-size: 2rem;
+                }
+
+.spotlight__view-code a{
+                        position: relative;
+
+                    }
+
+.spotlight__view-code a::after {
+                        content: "";
+                        position:absolute;
+                        left: 0;
+                        bottom: 0px;
+                        width: 0;
+                        height: 2px;
+                        background: white;
+                        transition: all ease .4s;
+                        }
+
+.spotlight__view-code a:visited{
+                            color: white;
+                        }
+
+.spotlight__view-code a:link{
+                            text-decoration: none;
+                        }
+
+.spotlight__view-code a:hover::after {
+                        width: 100%;
+                        }
+
 .reveal-item{
     opacity: 0;
     -webkit-transform: scale(1.15);
@@ -537,7 +575,6 @@ h1, h2, h3, h4, h5, h6{
     }
 
 .corner{
-    background-color: #95D2FE;
     position: absolute;
     width:0;
     height: 3px;

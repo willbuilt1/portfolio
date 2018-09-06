@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _RevealOnScroll = __webpack_require__(/*! ./modules/RevealOnScroll */ \"./app/assets/scripts/modules/RevealOnScroll.js\");\n\nvar _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//Where to import modules\nnew _RevealOnScroll2.default('.about', '80%', 1600);\nnew _RevealOnScroll2.default('.portfolio', '80%');\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _RevealOnScroll = __webpack_require__(/*! ./modules/RevealOnScroll */ \"./app/assets/scripts/modules/RevealOnScroll.js\");\n\nvar _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//Where to import modules\nnew _RevealOnScroll2.default('.about', '80%', 1600);\nnew _RevealOnScroll2.default('.portfolio', '80%');\nnew _RevealOnScroll2.default('.spotlight', '80%');\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
