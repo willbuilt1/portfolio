@@ -5,4 +5,5 @@ import RevealOnScroll from './modules/RevealOnScroll';
 new RevealOnScroll ('.about', '80%', 1600);
 new RevealOnScroll ('.portfolio', '80%', 700);
 new RevealOnScroll ('.spotlight', '80%');
+new RevealOnScroll ('.contact', '80%');
 

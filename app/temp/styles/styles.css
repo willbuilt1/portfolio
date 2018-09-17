@@ -575,6 +575,15 @@ h1, h2, h3, h4, h5, h6{
                         width: 100%;
                         }
 
+.contact__container{
+        width: 80%;
+        position: relative;
+    }
+
+.contact__corner{
+        background-color: #95D2FE;
+    }
+
 .reveal-item{
     opacity: 0;
     -webkit-transform: scale(1.15);
@@ -693,3 +702,47 @@ h1, h2, h3, h4, h5, h6{
 .item__icons-icon:first-child{
                 margin-right: 2rem;
             }
+
+.form__group{
+        position: relative;
+    }
+
+.form__group::after {
+        content: "";
+        position:absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 2px;
+        background: #001E59;
+        transition: all ease .4s;
+        }
+
+.form__group:hover::after{
+        width: 100%;
+        }
+
+.form__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    color: black;
+    display: block;
+    border: none;
+    width: 100%;
+    margin-bottom: 5px;
+    }
+
+.form__input:focus, .form__input:valid{
+        border-bottom: solid 2px #001E59;
+    }
+
+.form__submit{
+    background-color: #001E59;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    }

@@ -9,7 +9,9 @@
 @import 'layout/_about';
 @import 'layout/_portfolio';
 @import 'layout/_spotlight';
+@import 'layout/_contact';
 
 @import 'components/_reveal-item';
 @import 'components/_corner';
 @import 'components/_item';
+@import 'components/_form';

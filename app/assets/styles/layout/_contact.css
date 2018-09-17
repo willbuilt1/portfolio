@@ -1,0 +1,10 @@
+.contact{
+    &__container{
+        width: 80%;
+        position: relative;
+    }
+
+    &__corner{
+        background-color: $lightBlue;
+    }
+}
