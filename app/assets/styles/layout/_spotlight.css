@@ -27,12 +27,8 @@
                 & h4{
                     font-family: 'Montserrat', sans-serif;
                     font-size: 1.6rem;
-                    text-decoration: underline;
                 }
                 & li{
-                    display: inline-block;
-                    list-style: square;
-
                     &:not(:last-child){
                         margin-right: 1rem;
                     }

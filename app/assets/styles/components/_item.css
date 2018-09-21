@@ -1,8 +1,20 @@
 .item{
-        background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/addstract.png");
         background-position: center;
         background-size: cover; 
         display: flex;
+
+        &--1{
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/addstract.png");
+        }
+        &--2{
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/forkify.png");
+        }
+        &--3{
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/travel.png");
+        }
+        &--4{
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/natours.png");
+        }
         
         &__container{
         background-color: rgba($darkBlue, 0.95);
@@ -55,9 +67,23 @@
             display: flex;
             font-size: 3rem;
 
-            &-icon:first-child{
-                margin-right: $medium;
+            &-icon{
+                transition: all .2s ease;
+
+                & a{
+                    text-decoration: none;
+                }
+                
+                & a:visited{
+                    color: white;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+                &:first-child{
+                    margin-right: $large;
+                }
             }
         }
-
     }
