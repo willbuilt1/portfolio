@@ -1,5 +1,8 @@
 .portfolio{
     background-color: $darkBlue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     &__title{
         position: relative;
         display: inline-block;
@@ -39,6 +42,5 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2;
         grid-gap: 2rem;
-        padding-bottom: 7rem;
     }
 }

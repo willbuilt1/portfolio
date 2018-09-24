@@ -1,6 +1,6 @@
 .spotlight{
         width: 100%;
-        min-height: 90vh;
+        min-height: 100vh;
         background-image: linear-gradient( to right, rgba(#fff, 0.5), rgba($darkBlue, 1.0) 30%), url("../../assets/images/portfolio.png");
         background-position: center;
         background-size: cover; 

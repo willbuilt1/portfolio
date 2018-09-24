@@ -1,8 +1,8 @@
 .corner{
     position: absolute;
     width:0;
-    height: 3px;
-    max-width: 20rem;
+    height: 2px;
+    max-width: 10rem;
     transition: width .4s ease-in;
 
     &.showCorner{

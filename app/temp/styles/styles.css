@@ -412,9 +412,13 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom: 2rem;
 }
 
+.b-padding-large{
+    padding-bottom: 4rem;
+}
+
 .hero{
     width: 100%;
-    height: 80vh;
+    height: 95vh;
     background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.82), rgba(149, 210, 254, 0.82)), url("../../assets/images/hero.jpg");
     background-position: center;
     background-size: cover; 
@@ -433,17 +437,23 @@ h1, h2, h3, h4, h5, h6{
 .hero__heading--1{
             position: absolute;
             top: 30%;
-            left: 2rem;
+            left: 0rem;
         }
 
 .hero__heading--2{
             position: absolute;
             top: 50%;
-            left: 15rem;
+            left: 0;
         }
 
+.about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 .about__container{
-        width: 70%;
+        width: 50%;
         position: relative;
     }
 
@@ -488,6 +498,9 @@ h1, h2, h3, h4, h5, h6{
 
 .portfolio{
     background-color: #001E59;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio__title{
@@ -530,12 +543,11 @@ h1, h2, h3, h4, h5, h6{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2;
         grid-gap: 2rem;
-        padding-bottom: 7rem;
     }
 
 .spotlight{
         width: 100%;
-        min-height: 90vh;
+        min-height: 100vh;
         background-image: linear-gradient( to right, rgba(255,255,255, 0.5), rgba(0,30,89, 1.0) 30%), url("../../assets/images/portfolio.png");
         background-position: center;
         background-size: cover; 
@@ -608,6 +620,12 @@ h1, h2, h3, h4, h5, h6{
                         width: 100%;
                         }
 
+.contact{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
 .contact__container{
         position: relative;
     }
@@ -619,6 +637,41 @@ h1, h2, h3, h4, h5, h6{
 .contact span{
         padding-right: 1rem;
     }
+
+.contact__title{
+        position: relative;
+        display: inline-block;
+        padding-left: 7rem;
+        -webkit-transform: translateX(-7rem);
+                transform: translateX(-7rem);
+    }
+
+.contact__heading{
+        color: #001E59;
+        display: inline-block;
+        padding-left: 7rem;
+        margin-right: -7rem;
+        -webkit-transform: translateX(-7rem);
+                transform: translateX(-7rem);
+        text-decoration: none;
+        position: relative;
+        font-size: 4.5rem;
+    }
+
+.contact__line.contact__corner {
+        content: "";
+        position:absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 2px;
+        background: #001E59;
+        transition: all ease .6s;
+        }
+
+.contact__line.contact__corner.showCorner {
+            width: 100%;
+            }
 
 .contact a{
         position: relative;
@@ -667,8 +720,8 @@ h1, h2, h3, h4, h5, h6{
 .corner{
     position: absolute;
     width:0;
-    height: 3px;
-    max-width: 20rem;
+    height: 2px;
+    max-width: 10rem;
     transition: width .4s ease-in;
 }
 

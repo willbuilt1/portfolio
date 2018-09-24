@@ -29,14 +29,12 @@
             <div class="about__line about__corner"></div>
       </div>
       <div class="about__reveal">
-        <p class="main-text t-padding-medium">Hi i'm Will and I am a self taught Web Developer based in London U.K. I have been on my coding journey for around 18 months focusing primarily with front end languages such as HTML, CSS and JavaScript and more recently adding React and PHP to my toolkit. In May 2018 I left my previous job in local government, where I had been for over 10 years to fully commit to career in coding and have been freelancing in this time. I love coding and love the ever growing ability to bring ideas into life. </p>
-        <br>
-        <p class="main-text b-padding-medium">Away from the computer I am an avid football fan, supporting Arsenal and captaining my team on Sundays. I would describe myself as constantly curious who gets a bit fidgety when there isn't something new on the horizon. Be this a new book, training for a run or trying to learn C++ in the evenings for no apparent reason.</p>
+        <p class="main-text t-padding-medium b-padding-medium">Hi i'm Will and I am a self taught Web Developer based in London U.K. I have been on my coding journey for around 18 months focusing primarily with front end languages such as HTML, CSS and JavaScript and more recently adding React and PHP to my toolkit. In May 2018 I left my previous job in local government, where I had been for over 10 years to fully commit to career in coding and have been freelancing in this time. I love coding and love the ever growing ability to bring ideas into life. </p>
       </div>
     </div>
   </div>
 </section>
-<section class="portfolio t-margin-large">
+<section class="portfolio b-padding-large">
  <div class="wrapper">
     <div class="inner-wrapper">
       <div class="portfolio__title b-margin-medium">
@@ -161,32 +159,35 @@
       </div>
   </div>
 </section>
-<section class="contact wrapper t-margin-large">
+<section class="contact wrapper">
   <div class="contact__container">
-    <div class="contact__corner corner corner--top1"></div>
-    <div class="contact__corner corner corner--top2"></div>
     <div class="contact__corner corner corner--bottom1"></div>
     <div class="contact__corner corner corner--bottom2"></div>
-    <div class="contact__reveal inner-wrapper">
-      <h2 class="heading">Contact</h2>
-      <div class="main-text">If you would like to get in contact with me please fill out the form below. Alternatively, feel free to reach me on <span><a href="https://twitter.com/willbuilt1" target="_blank">twitter.</a></span></div>
-      <form action="/app/contactform.php" method="POST">
-        <div class="form__group">
-            <input type="text" class="form__input" placeholder="Name" id="name" name="name" required>
-        </div>
-        <div class="form__group">
-            <input type="text" class="form__input" placeholder="Email address" id="Email address" name="mail"required>
-        </div>
-        <div class="form__group">
-            <input type="text" class="form__input" placeholder="Subject" id="Subject" name = "subject"required>
-        </div>
-        <div class="form__group">
-            <textarea name="message" class= "form__input" id="Message" cols="30" rows="10" placeholder="Message" name="message" required></textarea>
-        </div>
-        <div class="form__group b-padding-medium">
-            <button type="submit" class="form__submit" name="submit">Send</button>
-        </div>
-    </form>
+    <div class="inner-wrapper">
+     <div class="contact__title b-margin-medium">
+            <h2 class="contact__heading">Contact</h2>
+            <div class="contact__line contact__corner"></div>
+      </div>
+      <div class="contact__reveal">
+            <div class="main-text">If you would like to get in contact with me please use out the form below or you can find me me on <span><a href="https://twitter.com/willbuilt1" target="_blank">twitter.</a></span></div>
+              <form action="/app/contactform.php" method="POST">
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Name" id="name" name="name" required>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Email address" id="Email address" name="mail"required>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Subject" id="Subject" name = "subject"required>
+                </div>
+                <div class="form__group">
+                    <textarea name="message" class= "form__input" id="Message" cols="30" rows="10" placeholder="Message" name="message" required></textarea>
+                </div>
+                <div class="form__group b-padding-medium">
+                    <button type="submit" class="form__submit" name="submit">Send</button>
+                </div>
+            </form>
+    </div>
     </div>
   </div>
 </section>

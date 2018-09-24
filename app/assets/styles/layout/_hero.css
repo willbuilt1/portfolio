@@ -1,6 +1,6 @@
 .hero{
     width: 100%;
-    height: 80vh;
+    height: 95vh;
     background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.82), rgba(149, 210, 254, 0.82)), url("../../assets/images/hero.jpg");
     background-position: center;
     background-size: cover; 
@@ -17,12 +17,12 @@
         &--1{
             position: absolute;
             top: 30%;
-            left: 2rem;
+            left: 0rem;
         }
         &--2{
             position: absolute;
             top: 50%;
-            left: 15rem;
+            left: 0;
         }
     }
 }
