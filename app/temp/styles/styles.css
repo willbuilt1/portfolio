@@ -448,8 +448,43 @@ h1, h2, h3, h4, h5, h6{
     }
 
 .about__corner{
-        background-color: #95D2FE;
+        background-color: #001E59;
     }
+
+.about__title{
+        position: relative;
+        display: inline-block;
+        padding-left: 7rem;
+        -webkit-transform: translateX(-7rem);
+                transform: translateX(-7rem);
+    }
+
+.about__heading{
+        color: #001E59;
+        display: inline-block;
+        padding-left: 7rem;
+        margin-right: -7rem;
+        -webkit-transform: translateX(-7rem);
+                transform: translateX(-7rem);
+        text-decoration: none;
+        position: relative;
+        font-size: 4.5rem;
+    }
+
+.about__line.about__corner {
+        content: "";
+        position:absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 2px;
+        background: #001E59;
+        transition: all ease .6s;
+        }
+
+.about__line.about__corner.showCorner {
+            width: 100%;
+            }
 
 .portfolio{
     background-color: #001E59;
@@ -500,7 +535,7 @@ h1, h2, h3, h4, h5, h6{
 
 .spotlight{
         width: 100%;
-        min-height: 80vh;
+        min-height: 90vh;
         background-image: linear-gradient( to right, rgba(255,255,255, 0.5), rgba(0,30,89, 1.0) 30%), url("../../assets/images/portfolio.png");
         background-position: center;
         background-size: cover; 
@@ -565,29 +600,67 @@ h1, h2, h3, h4, h5, h6{
                             text-decoration: none;
                         }
 
+.spotlight__view-code a:hover{
+                            font-weight: 600;
+                        }
+
 .spotlight__view-code a:hover::after {
                         width: 100%;
                         }
 
 .contact__container{
-        width: 80%;
         position: relative;
     }
 
 .contact__corner{
-        background-color: #95D2FE;
+        background-color: #001E59;
     }
+
+.contact span{
+        padding-right: 1rem;
+    }
+
+.contact a{
+        position: relative;
+    }
+
+.contact a::after {
+        content: "";
+        position:absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 2px;
+        background: black;
+        transition: all ease .2s;
+        }
+
+.contact a:visited{
+            color: black;
+        }
+
+.contact a:link{
+            text-decoration: none;
+        }
+
+.contact a:hover{
+            font-weight: 600;
+        }
+
+.contact a:hover::after {
+        width: 100%;
+        }
 
 .reveal-item{
     opacity: 0;
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.15) translateX(-7rem);
+            transform: scale(1.15) translateX(-7rem);
     transition: all 1s ease-out;
 }
 
 .reveal-item--visible{
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        -webkit-transform: scale(1) translateX(0);
+                transform: scale(1) translateX(0);
         opacity: 1;
     }
 
@@ -743,7 +816,7 @@ h1, h2, h3, h4, h5, h6{
         transition: all ease .4s;
         }
 
-.form__group:hover::after{
+.form__group:not(:last-child):hover::after{
         width: 100%;
         }
 

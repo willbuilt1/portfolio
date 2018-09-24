@@ -1,10 +1,43 @@
 .contact{
     &__container{
-        width: 80%;
         position: relative;
     }
 
     &__corner{
-        background-color: $lightBlue;
+        background-color: $darkBlue;
+    }
+
+    & span{
+        padding-right: 1rem;
+    }
+
+    & a{
+        position: relative;
+        &::after {
+        content: "";
+        position:absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 2px;
+        background: black;
+        -webkit-transition: all ease .2s;
+        -o-transition: all ease .2s;
+        transition: all ease .2s;
+        }
+
+        &:visited{
+            color: black;
+        }
+        &:link{
+            text-decoration: none;
+        }
+
+        &:hover{
+            font-weight: 600;
+        }
+        &:hover::after {
+        width: 100%;
+        }
     }
 }
