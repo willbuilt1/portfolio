@@ -426,12 +426,19 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .hero__heading{
-        font-size: 3rem;
+        font-size: 6rem;
         margin: 0;
         background-color: #001E59;
         color: white;
         display: inline-block;
         padding: 1rem;
+    }
+
+@media (max-width:768px) {
+
+.hero__heading{
+            font-size: 5rem
+    } 
     }
 
 .hero__heading--1{
@@ -446,6 +453,14 @@ h1, h2, h3, h4, h5, h6{
             left: 0;
         }
 
+@media (max-width:1200px) {
+
+.hero__heading--2{
+                right: 0;
+                left: auto
+        }
+    }
+
 .about{
     height: 100vh;
     display: flex;
@@ -455,6 +470,20 @@ h1, h2, h3, h4, h5, h6{
 .about__container{
         width: 50%;
         position: relative;
+    }
+
+@media (max-width:768px) {
+
+.about__container{
+            width: 80%
+    } 
+    }
+
+@media (max-width:530px) {
+
+.about__container{
+            width: 100%
+    }
     }
 
 .about__corner{
@@ -501,6 +530,7 @@ h1, h2, h3, h4, h5, h6{
     min-height: 100vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .portfolio__title{
@@ -541,8 +571,9 @@ h1, h2, h3, h4, h5, h6{
 .portfolio__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2;
+        grid-template-rows: repeat(2,40vh);
         grid-gap: 2rem;
+
     }
 
 .spotlight{
@@ -590,6 +621,7 @@ h1, h2, h3, h4, h5, h6{
 
 .spotlight__view-code a{
                         position: relative;
+                        color: white;
 
                     }
 
@@ -675,6 +707,7 @@ h1, h2, h3, h4, h5, h6{
 
 .contact a{
         position: relative;
+        color: black;
     }
 
 .contact a::after {
@@ -697,7 +730,7 @@ h1, h2, h3, h4, h5, h6{
         }
 
 .contact a:hover{
-            font-weight: 600;
+            font-weight: 600; 
         }
 
 .contact a:hover::after {
@@ -839,6 +872,7 @@ h1, h2, h3, h4, h5, h6{
 
 .item__icons-icon a{
                     text-decoration: none;
+                    color: white;
                 }
 
 .item__icons-icon a:visited{

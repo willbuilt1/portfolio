@@ -3,6 +3,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
     &__title{
         position: relative;
         display: inline-block;
@@ -36,11 +37,11 @@
         }
 
         
-
     &__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2;
+        grid-template-rows: repeat(2,40vh);
         grid-gap: 2rem;
+
     }
 }

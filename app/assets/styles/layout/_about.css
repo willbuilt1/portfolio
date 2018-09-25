@@ -5,6 +5,14 @@
     &__container{
         width: 50%;
         position: relative;
+
+        @mixin atMedium{
+            width: 80%;
+        }
+        
+        @mixin atSmall{
+            width: 100%;
+        }
     }
 
     &__corner{
