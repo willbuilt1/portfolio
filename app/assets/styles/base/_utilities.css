@@ -1,6 +1,11 @@
 .wrapper{
     padding-left: 3rem;
     padding-right: 3rem;
+    
+    @mixin atSmall{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }
 
 .inner-wrapper{

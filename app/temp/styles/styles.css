@@ -363,7 +363,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; 
     font-weight: 200;
     margin: 0;
 }
@@ -385,6 +385,14 @@ h1, h2, h3, h4, h5, h6{
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
+@media (max-width:530px) {
+
+.wrapper{
+        padding-left: 0rem;
+        padding-right: 0rem
+}
+    }
 
 .inner-wrapper{
     padding-left: 4rem;
@@ -462,7 +470,7 @@ h1, h2, h3, h4, h5, h6{
     }
 
 .about{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -496,6 +504,7 @@ h1, h2, h3, h4, h5, h6{
         padding-left: 7rem;
         -webkit-transform: translateX(-7rem);
                 transform: translateX(-7rem);
+        white-space: nowrap;
     }
 
 .about__heading{
@@ -571,9 +580,15 @@ h1, h2, h3, h4, h5, h6{
 .portfolio__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2,40vh);
+        grid-template-rows: 2;
         grid-gap: 2rem;
+    }
 
+@media (max-width:768px) {
+
+.portfolio__grid{
+            grid-template-columns: repeat(1, 1fr)
+    } 
     }
 
 .spotlight{

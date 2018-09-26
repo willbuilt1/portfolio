@@ -1,5 +1,5 @@
 .about{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     &__container{
@@ -24,6 +24,7 @@
         display: inline-block;
         padding-left: 7rem;
         transform: translateX(-7rem);
+        white-space: nowrap;
     }
     &__heading{
         color: $darkBlue;
