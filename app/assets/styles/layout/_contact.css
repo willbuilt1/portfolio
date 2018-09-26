@@ -46,32 +46,10 @@
         }
 
     & a{
-        position: relative;
         color: black;
-        &::after {
-        content: "";
-        position:absolute;
-        left: 0;
-        bottom: 0px;
-        width: 0;
-        height: 2px;
-        background: black;
-        -webkit-transition: all ease .2s;
-        -o-transition: all ease .2s;
-        transition: all ease .2s;
-        }
-
+        
         &:visited{
             color: black;
-        }
-        &:link{
-            text-decoration: none;
-        }
-        &:hover{
-            font-weight: 600; 
-        }
-        &:hover::after {
-        width: 100%;
         }
     }
 }

@@ -603,10 +603,26 @@ h1, h2, h3, h4, h5, h6{
         padding: 3rem 3rem 3rem 0;
     }
 
+@media (max-width:530px) {
+
+.spotlight{
+            background-image: linear-gradient( to bottom, rgba(255,255,255, 0.5), rgba(0,30,89, 1.0) 22%), url("../../assets/images/portfolio.png");
+            padding: 40vh 0 4rem 0;
+            background-position: left
+    }
+    }
+
 .spotlight__container{
             width: 70%;
             position: relative;
             }
+
+@media (max-width:530px) {
+
+.spotlight__container{
+                width: 100%
+            }
+    }
 
 .spotlight__corner{
                 background-color: white;
@@ -721,35 +737,11 @@ h1, h2, h3, h4, h5, h6{
             }
 
 .contact a{
-        position: relative;
         color: black;
     }
 
-.contact a::after {
-        content: "";
-        position:absolute;
-        left: 0;
-        bottom: 0px;
-        width: 0;
-        height: 2px;
-        background: black;
-        transition: all ease .2s;
-        }
-
 .contact a:visited{
             color: black;
-        }
-
-.contact a:link{
-            text-decoration: none;
-        }
-
-.contact a:hover{
-            font-weight: 600; 
-        }
-
-.contact a:hover::after {
-        width: 100%;
         }
 
 .reveal-item{
