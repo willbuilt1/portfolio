@@ -697,10 +697,6 @@ h1, h2, h3, h4, h5, h6{
         background-color: #001E59;
     }
 
-.contact span{
-        padding-right: 1rem;
-    }
-
 .contact__title{
         position: relative;
         display: inline-block;

@@ -9,10 +9,6 @@
     &__corner{
         background-color: $darkBlue;
     }
-
-    & span{
-        padding-right: 1rem;
-    }
     &__title{
         position: relative;
         display: inline-block;
