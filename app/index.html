@@ -29,7 +29,7 @@
             <div class="about__line about__corner"></div>
       </div>
       <div class="about__reveal">
-        <p class="main-text t-padding-medium b-padding-medium">Hi i'm Will and I am a self taught Web Developer based in London U.K. I have been on my coding journey for around 18 months focusing primarily with front end languages such as HTML, CSS and JavaScript and more recently adding React and PHP to my toolkit. In May 2018 I left my previous job in local government, where I had been for over 10 years to fully commit to career in coding and have been freelancing in this time. I love coding and love the ever growing ability to bring ideas into life. </p>
+        <p class="main-text t-padding-medium b-padding-medium">Hi i'm Will and I am a self taught Web Developer based in London U.K. I have been on my coding journey for around 18 months focusing primarily with front end languages such as HTML, CSS and JavaScript and more recently adding React and PHP to my toolkit. In May 2018 I left my previous job in local government, where I had been for over 10 years to fully commit to a career in coding and have been freelancing in this time. I love coding and love the ever growing ability to bring ideas into life. </p>
       </div>
     </div>
   </div>
@@ -41,8 +41,26 @@
         <h2 class="portfolio__heading">Portfolio</h2>
         <div class="portfolio__corner"></div>
       </div>
-        <div class="portfolio__grid portfolio__reveal">
-          <div class="item item--1">
+        <div class="portfolio__grid">
+            <div class="item item--2 portfolio__reveal">
+                <div class="item__container">
+                  <div class="item__title"><h3>Instaglory</h3></div>  
+                  <div class="item__description main-text">Custom CSS and UX improvements made to a client's existing wordpress site/theme. Some of the changes included an animated timeline, payment and webchat integration. </div>
+                  <div class="item__tech">
+                    <ul>
+                      <li>PHP</li>
+                      <li>CSS</li>
+                      <li>Wordpress</li>
+                      <li>Javascript</li>
+                      <li>Plugins</li>
+                    </ul>
+                  </div>
+                  <div class="item__icons">
+                    <div class="item__icons-icon"><a class="fas fa-eye" href="https://www.instaglory.com/" target="_blank"></a></div>
+                  </div>
+                </div>
+              </div>
+          <div class="item item--1 portfolio__reveal">
             <div class="item__container">
               <div class="item__title"><h3>Addstract</h3></div>  
               <div class="item__description main-text">A single page landing site made from a design found on Behance. This was made as practice for converting design files into a fully functional and responsive webpage. </div>
@@ -60,26 +78,7 @@
               </div>
             </div>
           </div>
-          <div class="item item--2">
-            <div class="item__container">
-              <div class="item__title"><h3>Forkify</h3></div>  
-              <div class="item__description main-text">A web app written in vanilla JS(ES6) to fetch data from Food2Fork API and render the results in the UI. Also utilising Babel and Webpack to use the latest techniques to organise the code. </div>
-              <div class="item__tech">
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Vanilla JS</li>
-                  <li>Babel</li>
-                  <li>APIs</li>
-                </ul>
-              </div>
-              <div class="item__icons">
-                <div class="item__icons-icon"><a class="fas fa-eye" href="https://willbuilt1.github.io/Forkify/" target="_blank"></a></div>
-                <div class="item__icons-icon"><a class="fas fa-code"href="https://github.com/willbuilt1/Forkify" target="_blank"></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="item item--3">
+          <div class="item item--3 portfolio__reveal">
             <div class="item__container">
               <div class="item__title"><h3>Clear View Escapes</h3></div>  
               <div class="item__description main-text">A fully responsive travel site landing page made to practice modern workflow techniques such as Gulp, Npm and Webpack.</div>
@@ -99,23 +98,24 @@
               </div>
             </div>
           </div>
-          <div class="item item--4">
-            <div class="item__container">
-              <div class="item__title"><h3>Natours</h3></div>  
-              <div class="item__description main-text">A fully responsive page made primarily with Sass to practice advanced CSS techniques such as animations, transfomations and clip-path.</div>
-              <div class="item__tech">
-                <ul>
-                  <li>HTML</li>
-                  <li>SASS</li>
-                  <li>NPM</li>
-                </ul>
-              </div>
-              <div class="item__icons">
-                <div class="item__icons-icon"><a class="fas fa-eye" href="https://willbuilt1.github.io/Natours/" target="_blank"></a></div>
-                <div class="item__icons-icon"><a class="fas fa-code"href="https://github.com/willbuilt1/Natours" target="_blank"></a></div>
-              </div>
-            </div>
-          </div>
+          <div class="item item--4 portfolio__reveal">
+              <div class="item__container">
+                <div class="item__title"><h3>Forkify</h3></div>  
+                <div class="item__description main-text">A web app written in vanilla JS(ES6) to fetch data from Food2Fork API and render the results in the UI. Also utilising Babel and Webpack to use the latest techniques to organise the code. </div>
+                <div class="item__tech">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Vanilla JS</li>
+                    <li>Babel</li>
+                    <li>APIs</li>
+                  </ul>
+                </div>
+                <div class="item__icons">
+                  <div class="item__icons-icon"><a class="fas fa-eye" href="https://willbuilt1.github.io/Forkify/" target="_blank"></a></div>
+                  <div class="item__icons-icon"><a class="fas fa-code"href="https://github.com/willbuilt1/Forkify" target="_blank"></a></div>
+                </div>
+  </div>
   
   
         </div>
@@ -134,6 +134,8 @@
         <p>The idea behind this site was working off the idea of  the blueprint. Firstly because I have always had a love of architecture and secondly who doesn't love classic Jay-Z .</p>
         <br>
         <p>My aim was to create a minimal design with a focus on pixel precision that would work well across devices. To achieve this I used a very simple colour scheme of three colours and latest front-end technologies such as CSS Grid and Flexbox to bring the design together and ensure responsiveness. Finally I used CSS animations and Javascript to bring a bit of life to the final product. </p>
+        <br>
+        <p>To deploy this site I am using Netlify as it allows continuous deployment by running my build commands automatically, every time I push to the Git repository.</p>
         <br>
         <h4>Languages used:</h4>
         <ul class="item__tech">

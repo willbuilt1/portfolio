@@ -758,7 +758,7 @@ h1, h2, h3, h4, h5, h6{
     width:0;
     height: 2px;
     max-width: 10rem;
-    transition: width .4s ease-in;
+    transition: width .3s ease-in;
 }
 
 .corner.showCorner{
@@ -806,7 +806,7 @@ h1, h2, h3, h4, h5, h6{
         }
 
 .item--2{
-            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/forkify.png");
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/instaglory.png");
         }
 
 .item--3{
@@ -814,7 +814,7 @@ h1, h2, h3, h4, h5, h6{
         }
 
 .item--4{
-            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/natours.png");
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/forkify.png");
         }
 
 .item__container{
