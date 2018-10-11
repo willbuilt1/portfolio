@@ -7,13 +7,13 @@
             background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/addstract.png");
         }
         &--2{
-            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/forkify.png");
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/instaglory.png");
         }
         &--3{
             background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/travel.png");
         }
         &--4{
-            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/natours.png");
+            background-image: linear-gradient( to bottom, rgba(149, 210, 254, 0.2), rgba(149, 210, 254, 0.2)), url("../../assets/images/forkify.png");
         }
         
         &__container{
